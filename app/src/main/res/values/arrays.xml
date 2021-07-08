@@ -245,9 +245,4 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="pref_theme_colors">
-        <item>@string/Theme_Purple</item>
-        <item>@string/Theme_Blue</item>
-    </string-array>
-
 </resources>

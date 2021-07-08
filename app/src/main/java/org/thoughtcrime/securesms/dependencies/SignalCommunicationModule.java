@@ -6,13 +6,15 @@ import org.thoughtcrime.securesms.jobs.AvatarDownloadJob;
 import org.thoughtcrime.securesms.jobs.RetrieveProfileAvatarJob;
 import org.thoughtcrime.securesms.linkpreview.LinkPreviewRepository;
 import org.thoughtcrime.securesms.preferences.AppProtectionPreferenceFragment;
+import org.thoughtcrime.securesms.preferences.AppThemesPreferenceFragment;
 
 import dagger.Module;
 
 @Module(complete = false, injects = {AvatarDownloadJob.class,
                                      RetrieveProfileAvatarJob.class,
                                      AppProtectionPreferenceFragment.class,
-                                     LinkPreviewRepository.class})
+                                     LinkPreviewRepository.class,
+                                     AppThemesPreferenceFragment.class })
 
 public class SignalCommunicationModule {
 

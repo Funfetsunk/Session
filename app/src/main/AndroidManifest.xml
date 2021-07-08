@@ -153,12 +153,12 @@
             android:name="org.thoughtcrime.securesms.loki.activities.SelectContactsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="org.thoughtcrime.securesms.loki.activities.PrivacySettingsActivity"
+            android:name="org.thoughtcrime.securesms.loki.activities.ThemesSettingsActivity"
             android:label="@string/activity_privacy_settings_title"
             android:screenOrientation="portrait" />
         <activity
-            android:name="org.thoughtcrime.securesms.loki.activities.ThemesSettingsActivity"
-            android:label="@string/activity_themes_settings_title"
+            android:name="org.thoughtcrime.securesms.loki.activities.PrivacySettingsActivity"
+            android:label="@string/activity_privacy_settings_title"
             android:screenOrientation="portrait" />
         <activity
             android:name="org.thoughtcrime.securesms.loki.activities.NotificationSettingsActivity"

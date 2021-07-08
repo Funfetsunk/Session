@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
 import mobi.upod.timedurationpicker.TimeDurationPickerDialog;
 import network.loki.messenger.R;
 
-public class ThemesPreferenceFragment extends CorrectedPreferenceFragment implements InjectableType {
+public class AppThemesPreferenceFragment extends CorrectedPreferenceFragment implements InjectableType {
 
   @Override
   public void onAttach(Activity activity) {
@@ -32,15 +32,19 @@ public class ThemesPreferenceFragment extends CorrectedPreferenceFragment implem
   public void onCreate(Bundle paramBundle) {
     super.onCreate(paramBundle);
 
-    this.findPreference(TextSecurePreferences.THEME_PURPLE).setOnPreferenceChangeListener(new ThemePurpleListener());
-    this.findPreference(TextSecurePreferences.THEME_RED).setOnPreferenceClickListener(new ThemeRedListener());
+    this.findPreference(TextSecurePreferences.SCREEN_LOCK).setOnPreferenceChangeListener(new ScreenLockListener());
+    this.findPreference(TextSecurePreferences.SCREEN_LOCK_TIMEOUT).setOnPreferenceClickListener(new ScreenLockTimeoutListener());
+
+    this.findPreference(TextSecurePreferences.READ_RECEIPTS_PREF).setOnPreferenceChangeListener(new ReadReceiptToggleListener());
+    this.findPreference(TextSecurePreferences.TYPING_INDICATORS).setOnPreferenceChangeListener(new TypingIndicatorsToggleListener());
+    this.findPreference(TextSecurePreferences.LINK_PREVIEWS).setOnPreferenceChangeListener(new LinkPreviewToggleListener());
 
     initializeVisibility();
   }
 
   @Override
   public void onCreatePreferences(@Nullable Bundle savedInstanceState, String rootKey) {
-    addPreferencesFromResource(R.xml.preferences_app_protection);
+    addPreferencesFromResource(R.xml.preferences_app_themes);
   }
 
   @Override
@@ -75,7 +79,7 @@ public class ThemesPreferenceFragment extends CorrectedPreferenceFragment implem
     }
   }
 
-  private class ThemePurpleListener implements Preference.OnPreferenceChangeListener {
+  private class ScreenLockListener implements Preference.OnPreferenceChangeListener {
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
       boolean enabled = (Boolean)newValue;
@@ -89,7 +93,7 @@ public class ThemesPreferenceFragment extends CorrectedPreferenceFragment implem
     }
   }
 
-  private class ThemeRedListener implements Preference.OnPreferenceClickListener {
+  private class ScreenLockTimeoutListener implements Preference.OnPreferenceClickListener {
 
     @Override
     public boolean onPreferenceClick(Preference preference) {
@@ -108,4 +112,30 @@ public class ThemesPreferenceFragment extends CorrectedPreferenceFragment implem
     }
   }
 
+  private class ReadReceiptToggleListener implements Preference.OnPreferenceChangeListener {
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+      return true;
+    }
+  }
+
+  private class TypingIndicatorsToggleListener implements Preference.OnPreferenceChangeListener {
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+      boolean enabled = (boolean)newValue;
+
+      if (!enabled) {
+        ApplicationContext.getInstance(requireContext()).getTypingStatusRepository().clear();
+      }
+
+      return true;
+    }
+  }
+
+  private class LinkPreviewToggleListener implements Preference.OnPreferenceChangeListener {
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+      return true;
+    }
+  }
 }
