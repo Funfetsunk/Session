@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <color name="accent">@color/core_purple</color>
+    <color name="accent_alpha50">@color/core_purple</color>
+    <color name="text">#FFFFFF</color>
+    <color name="destructive">#FF453A</color>
+    <color name="unimportant">#D8D8D8</color>
+    <color name="profile_picture_background">#3535  35</color>
+    <color name="cell_background">#1B1B1B</color>
+    <color name="cell_selected">#0C0C0C</color>
+    <color name="action_bar_background">#171717</color>
+    <color name="separator">#36383C</color>
+    <color name="unimportant_button_background">#323232</color>
+    <color name="dialog_background">#101011</color>
+    <color name="unimportant_dialog_button_background">@color/unimportant_button_background</color>
+    <color name="app_icon_background">#333132</color>
+    <color name="progress_bar_background">#0AFFFFFF</color>
+    <color name="compose_view_background">#1B1B1B</color>
+    <color name="compose_text_view_background">#141414</color>
+    <color name="quote_not_found_background">#80FFFFFF</color>
+    <color name="new_conversation_button_collapsed_background">#1F1F1F</color>
+    <color name="new_conversation_button_shadow">@color/core_purple</color>
+    <color name="pn_option_background">#1B1B1B</color>
+    <color name="pn_option_border">#212121</color>
+    <color name="paths_building">#FFCE3A</color>
+    <color name="open_group_chip_color">#0DFFFFFF</color>
+    <color name="message_selected">#000000</color>
+    <color name="input_bar_background">#171717</color>
+    <color name="input_bar_button_background">#0DFFFFFF</color>
+    <color name="input_bar_button_background_opaque">#232323</color>
+    <color name="input_bar_button_background_opaque_border">#33FFFFFF</color>
+    <color name="input_bar_lock_view_background">#171717</color>
+    <color name="input_bar_lock_view_border">#66FFFFFF</color>
+    <color name="mention_candidates_view_background">#171717</color>
+    <color name="mention_candidates_view_background_ripple">#0C0C0C</color>
+    <color name="link_preview_background">#000000</color>
+    <color name="scroll_to_bottom_button_background">#171717</color>
+    <color name="scroll_to_bottom_button_border">#99FFFFFF</color>
+    <color name="conversation_unread_count_indicator_background">#303030</color>
+
+    <array name="profile_picture_placeholder_colors">
+        <item>@color/core_purple</item>
+        <item>@color/core_purple</item>
+        <item>@color/core_purple</item>
+        <item>@color/core_purple</item>
+    </array>
+
+    <color name="loki_darkest_gray">#0a0a0a</color>
+
+    <color name="signal_primary">@color/core_purple</color>
+    <color name="signal_primary_dark">@color/core_purple</color>
+
+    <color name="textsecure_primary">@color/core_purple</color>
+    <color name="textsecure_primary_dark">@color/core_purple</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="gray12">#ffe0e0e0</color>
+    <color name="gray13">#ffababab</color>
+    <color name="gray20">#ffcccccc</color>
+    <color name="gray27">#ffbbbbbb</color>
+    <color name="gray50">#ff808080</color>
+    <color name="gray65">#ff595959</color>
+    <color name="gray70">#ff4d4d4d</color>
+    <color name="gray78">#ff383838</color>
+
+    <color name="transparent_black_30">#30000000</color>
+    <color name="transparent_black_40">#40000000</color>
+    <color name="transparent_black_70">#70000000</color>
+    <color name="transparent_black_90">#90000000</color>
+
+    <color name="transparent_white_30">#30ffffff</color>
+    <color name="transparent_white_40">#40ffffff</color>
+    <color name="transparent_white_aa">#aaffffff</color>
+
+    <color name="action_mode_status_bar">@color/gray65</color>
+    <color name="touch_highlight">#22000000</color>
+
+    <color name="device_link_item_background_light">#ffffffff</color>
+    <color name="device_link_item_background_dark">#ff333333</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="transparent_black">#00000000</color>
+
+    <color name="MediaOverview_Media_selected_overlay">#88000000</color>
+
+    <color name="avatar_background">@color/transparent_black_90</color>
+
+    <color name="default_background_start">#121212</color>
+    <color name="default_background_end">#171717</color>
+</resources>
