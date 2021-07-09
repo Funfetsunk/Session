@@ -42,7 +42,7 @@
 
         <!-- App specific attributes -->
         <item name="ic_visibility_on">@drawable/ic_baseline_visibility_24</item>
-        <item name="ic_visibility_off">@drawable/session_logo</item>
+        <item name="ic_visibility_off">@drawable/ic_baseline_visibility_off_24</item>
         <item name="ic_arrow_forward">@drawable/ic_baseline_arrow_forward_24</item>
 
         <item name="dialog_background_color">@color/dialog_background</item>
@@ -61,7 +61,7 @@
         <item name="home_gradient_end">#FF000000</item>
 
         <item name="message_received_background_color">#2D2D2D</item>
-        <item name="message_sent_background_color">@color/core_purple</item>
+        <item name="message_sent_background_color">#00E97B</item>
 
         <item name="menu_accept_icon">@drawable/ic_baseline_done_24</item>
         <item name="menu_trash_icon">@drawable/ic_baseline_delete_24</item>
@@ -270,7 +270,7 @@
         <item name="windowNoTitle">true</item>
         <item name="windowActionModeOverlay">true</item>
     </style>
-    
+
     <style name="Theme.TextSecure.Dialog.Rationale" parent="Theme.AppCompat.DayNight.Dialog.Alert">
         <item name="android:windowBackground">@drawable/default_dialog_background</item>
     </style>

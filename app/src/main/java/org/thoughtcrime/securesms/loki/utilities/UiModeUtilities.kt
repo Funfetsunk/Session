@@ -26,13 +26,13 @@ object UiModeUtilities {
     @JvmStatic
     fun getUserSelectedUiMode(context: Context): UiMode {
         val prefs = PreferenceManager.getDefaultSharedPreferences(context)
-        val selectedUiModeName = prefs.getString(PREF_KEY_SELECTED_UI_MODE, UiMode.SYSTEM_DEFAULT.name)!!
+        val selectedUiModeName = prefs.getString(PREF_KEY_SELECTED_UI_MODE, UiMode.DAY.name)!!
         var selectedUiMode: UiMode
         try {
             selectedUiMode = UiMode.valueOf(selectedUiModeName)
         } catch (e: IllegalArgumentException) {
             // Cannot recognize UiMode constant from the given string.
-            selectedUiMode = UiMode.SYSTEM_DEFAULT
+            selectedUiMode = UiMode.DAY
         }
         return selectedUiMode
     }
@@ -60,6 +60,6 @@ enum class UiMode(
         val nightModeValue: Int) {
 
     DAY(R.string.dialog_ui_mode_option_day, AppCompatDelegate.MODE_NIGHT_NO),
-    NIGHT(R.string.dialog_ui_mode_option_night, AppCompatDelegate.MODE_NIGHT_YES),
-    SYSTEM_DEFAULT(R.string.dialog_ui_mode_option_system_default, AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
+    NIGHT(R.string.dialog_ui_mode_option_night, AppCompatDelegate.MODE_NIGHT_YES);
+    //SYSTEM_DEFAULT(R.string.dialog_ui_mode_option_system_default, AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
 }

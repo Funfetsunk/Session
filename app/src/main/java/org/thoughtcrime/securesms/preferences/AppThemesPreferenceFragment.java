@@ -39,13 +39,9 @@ public class AppThemesPreferenceFragment extends CorrectedPreferenceFragment imp
   private class PurpleThemeListener implements Preference.OnPreferenceChangeListener {
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-      boolean enabled = (Boolean)newValue;
 
-      TextSecurePreferences.setScreenLockEnabled(getContext(), enabled);
 
-      Intent intent = new Intent(getContext(), KeyCachingService.class);
-      intent.setAction(KeyCachingService.LOCK_TOGGLED_EVENT);
-      getContext().startService(intent);
+
       return true;
     }
   }

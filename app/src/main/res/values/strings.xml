@@ -555,6 +555,7 @@
     <string name="preferences__request_keyboard_to_disable_personalized_learning">Request keyboard to disable personalized learning</string>
     <string name="preferences__light_theme">Light</string>
     <string name="preferences__dark_theme">Dark</string>
+    <string name="preferences__purpletheme">Purple</string>
     <string name="preferences_chats__message_trimming">Message Trimming</string>
     <string name="preferences_advanced__use_system_emoji">Use system emoji</string>
     <string name="preferences_advanced__disable_signal_built_in_emoji_support">Disable Session\'s built-in emoji support</string>
@@ -647,9 +648,7 @@
     <string name="ProgressPreference_d_messages_so_far">%d messages so far</string>
     <string name="BackupUtil_never">Never</string>
     <string name="preferences_app_themes_purple">Purple</string>
-    <string name="preferences_app_themes_blue">Blue</string>
     <string name="preferences_app_themes_purple_desc">Use the purple theme</string>
-    <string name="preferences_app_themes_blue_desc">Use the blue theme</string>
     <string name="preferences_app_protection__screen_lock">Screen lock</string>
     <string name="preferences_app_protection__lock_signal_access_with_android_screen_lock_or_fingerprint">Lock Session access with Android screen lock or fingerprint</string>
     <string name="preferences_app_protection__screen_lock_inactivity_timeout">Screen lock inactivity timeout</string>
@@ -819,8 +818,8 @@
     <string name="view_reset_secure_session_done_message">Secure session reset done</string>
     
     <string name="dialog_ui_mode_title">Theme</string>
-    <string name="dialog_ui_mode_option_day">Day</string>
-    <string name="dialog_ui_mode_option_night">Night</string>
+    <string name="dialog_ui_mode_option_day">Purple</string>
+    <string name="dialog_ui_mode_option_night">Green</string>
     <string name="dialog_ui_mode_option_system_default">System default</string>
 
     <string name="activity_conversation_menu_copy_session_id">Copy Session ID</string>

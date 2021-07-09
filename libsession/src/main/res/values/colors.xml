@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <color name="accent">@color/core_purple</color>
-    <color name="accent_alpha50">@color/core_dark_purple</color>
+    <color name="accent">#00F782</color>
+    <color name="accent_alpha50">#8000F782</color>
     <color name="text">#FFFFFF</color>
     <color name="destructive">#FF453A</color>
     <color name="unimportant">#D8D8D8</color>
@@ -19,16 +19,30 @@
     <color name="compose_text_view_background">#141414</color>
     <color name="quote_not_found_background">#80FFFFFF</color>
     <color name="new_conversation_button_collapsed_background">#1F1F1F</color>
-    <color name="new_conversation_button_shadow">@color/core_purple</color>
+    <color name="new_conversation_button_shadow">#077C44</color>
     <color name="pn_option_background">#1B1B1B</color>
     <color name="pn_option_border">#212121</color>
     <color name="paths_building">#FFCE3A</color>
+    <color name="open_group_chip_color">#0DFFFFFF</color>
+    <color name="message_selected">#000000</color>
+    <color name="input_bar_background">#171717</color>
+    <color name="input_bar_button_background">#0DFFFFFF</color>
+    <color name="input_bar_button_background_opaque">#232323</color>
+    <color name="input_bar_button_background_opaque_border">#33FFFFFF</color>
+    <color name="input_bar_lock_view_background">#171717</color>
+    <color name="input_bar_lock_view_border">#66FFFFFF</color>
+    <color name="mention_candidates_view_background">#171717</color>
+    <color name="mention_candidates_view_background_ripple">#0C0C0C</color>
+    <color name="link_preview_background">#000000</color>
+    <color name="scroll_to_bottom_button_background">#171717</color>
+    <color name="scroll_to_bottom_button_border">#99FFFFFF</color>
+    <color name="conversation_unread_count_indicator_background">#303030</color>
 
     <array name="profile_picture_placeholder_colors">
-        <item>#9e35db</item>
-        <item>#9e58c7</item>
-        <item>#d442f5</item>
-        <item>#b345cc</item>
+        <item>#5ff8b0</item>
+        <item>#26cdb9</item>
+        <item>#f3c615</item>
+        <item>#fcac5a</item>
     </array>
 
     <color name="loki_darkest_gray">#0a0a0a</color>

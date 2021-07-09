@@ -1,4 +1,4 @@
-rootProject.name = "session-android"
+rootProject.name = "session"
 
 include ':app'
 include ':libsession'
